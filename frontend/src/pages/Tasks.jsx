@@ -9,7 +9,7 @@ export default function Tasks() {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/api/tasks", {
+      const res = await axios.get("https://task-manager-mern-97dh.onrender.com/api/tasks", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -26,7 +26,7 @@ export default function Tasks() {
 
     try {
       await axios.post(
-        "http://localhost:8000/api/tasks",
+        "https://task-manager-mern-97dh.onrender.com/api/tasks",
         { title },
         {
           headers: {
